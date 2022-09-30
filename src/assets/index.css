@@ -11,3 +11,21 @@ h1 {
   background-color: #e04747;
   margin: -8px -8px 2rem -8px;
 }
+
+.navigate:link,
+.navigate:visited {
+  margin-left: 28%;
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navigate:hover,
+.navigate:active {
+  background-color: green;
+  color: white;
+}
