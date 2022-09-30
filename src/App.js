@@ -1,10 +1,18 @@
+import HabitList from "./components/HabitList";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import AddHabit from "./components/AddHabit";
+
 function App() {
   return (
-    <div className="App">
-      <header>
-        <h1> HABIT TRACKER</h1>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+
+      <Routes>
+        <Route path="/addHabit" element={<AddHabit />} />
+        <Route path="/HabitList" element={<HabitList />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
