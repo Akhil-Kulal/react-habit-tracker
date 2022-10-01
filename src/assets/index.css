@@ -1,6 +1,8 @@
 * {
   padding: 0;
+  box-sizing: border-box;
   background-color: #ffabab;
+  color: black;
   font-family: Verdana, sans-serif;
 }
 
@@ -69,4 +71,28 @@ button {
 button:hover {
   background-color: green;
   color: white;
+}
+
+.habits-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.week {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 0.2rem;
+}
+
+.day {
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.day:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
 }
