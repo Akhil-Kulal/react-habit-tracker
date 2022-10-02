@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { addHabit } from "../store/habitSlice";
 import { getDays } from "../store/habitSlice";
 
+// component used to add new habit in habit state
 const AddHabit = () => {
   const dispatch = useDispatch();
   const habits = useSelector((state) => state.habit);
@@ -11,6 +12,7 @@ const AddHabit = () => {
   const navigate = useNavigate();
   const addHabitHandler = (e) => {
     e.preventDefault();
+    // dispatching new habit
     dispatch(
       addHabit({
         id: habits.length + 1,

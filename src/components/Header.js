@@ -1,5 +1,6 @@
 import React from "react";
 
+// component for the heading of both AddHabit and HabitList component
 const Header = () => {
   return (
     <header>

@@ -2,11 +2,10 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeStatus } from "../store/habitSlice";
 
+// component to display all the habits
 const HabitList = () => {
   const dispatch = useDispatch();
-
   const habits = useSelector((state) => state.habit);
-
   let color;
 
   return (
@@ -20,6 +19,7 @@ const HabitList = () => {
               </h4>
               <div className="week">
                 {Object.entries(habit.status).map(([key, value]) => {
+                  // defining color for different status of the habit
                   if (value === "none") {
                     color = "white";
                   }

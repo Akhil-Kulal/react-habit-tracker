@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// function to get today's and previous six days date
 export const getDays = () => {
   const days = [];
   for (let i = 6; i >= 0; i--) {
@@ -11,6 +12,7 @@ export const getDays = () => {
   return days;
 };
 
+// initial hardcoded habits to display in HabitList page
 const initialState = [
   {
     id: 1,
@@ -24,6 +26,7 @@ const initialState = [
   },
 ];
 
+// functionality to toggle between three status
 export const habitSlice = createSlice({
   name: "status",
   initialState,
