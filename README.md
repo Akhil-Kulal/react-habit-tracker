@@ -30,4 +30,4 @@ Overview - React habit tracker app, where we can define habits and track them.
 
 --> The habits can be marked as not done by clicking twice on any habit of any required date which is represented in red color.
 
-TECH STACK: React, Redux, React router
+TECH STACK: React, Redux, React router, HTML, CSS, Javascript
